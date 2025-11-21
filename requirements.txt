@@ -1,0 +1,14 @@
+setuptools_scm
+asgiref==3.11.0
+dj-database-url==3.0.1
+Django==5.2.8
+dotenv==0.9.9
+gunicorn==23.0.0
+packaging==25.0
+Pillow==9.1.1
+python-dotenv==1.2.1
+pytz==2022.1
+setuptools==80.9.0
+sqlparse==0.4.2
+whitenoise==6.11.0
+yt-dlp==2025.11.12

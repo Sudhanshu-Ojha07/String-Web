@@ -1,0 +1,126 @@
+:root{
+  --bg: #f7f7f7;
+  --text: #111111;
+  --card-bg: #ffffff;
+  --muted: #6c757d;
+  --link: #007bff;
+  --popup-bg: #ffffff;
+}
+body.dark-mode {
+  background-color: #0f1720 !important;
+  color: #e6eef6 !important;
+}
+
+
+/* Toggle button styling (top-right) */
+.dark-toggle{
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 1050; /* above bootstrap modals/popups */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: rgba(255, 253, 253, 0.9);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  font-size: 18px;
+  user-select: none;
+  transition: background .2s ease, transform .08s ease;
+}
+.dark-toggle:active { transform: scale(.98); }
+
+/* Dark mode overrides */
+body.dark-mode {
+  --bg: #0f1720;
+  --text: #ffffff;
+  --card-bg: #0b1220;
+  --muted: #9aa6b2;
+  --link: #66b0ff;
+  --popup-bg: #0b1220;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+
+/* Cards, navbars, popups, etc. Use these selectors as a starting point. */
+.card, .card-body, nav, .popup .small-popup, .popup .large-popup, .jumbotron {
+  background-color: var(--card-bg);
+  color: var(--text);
+}
+
+/* Links */
+a, .nav-link {
+  color: var(--link);
+}
+
+/* Muted text */
+.text-muted, .grey {
+  color: var(--muted) !important;
+}
+
+/* Popup background */
+.popup .small-popup, .popup .large-popup {
+  background-color: var(--popup-bg);
+  border-color: rgba(255,255,255,0.04);
+}
+
+/* Slightly darker toggle when dark-mode active */
+body.dark-mode .dark-toggle {
+  background: rgba(255,255,255,0.04);
+  box-shadow: none;
+  color: var(--text);
+}
+
+
+.form-control:focus{
+    box-shadow: 0 0 0 0.1rem rgba(40,167,69,.25);
+    border-color: rgb(33,136,56);
+}
+.btn, .btn:focus, .btn:active{
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+.btn{
+    color: white;
+    background-color: #035b7e !important;
+    border-color: #09dbca !important;
+    border-radius: 999px;
+    width: 95%;
+}
+.btn:disabled {
+    opacity: .90; 
+}
+.btn:hover, .btn:active, .btn:focus{
+    background-color: #31d6d6 !important;
+    border-color: #0b61a7 !important;
+}
+.star{
+    color: red;
+}
+
+.user-box{
+    background-color: var(--bg);
+    width: 45%;
+    border-radius: 5px;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 50px 10px 50px;
+}
+
+.user-box form > div{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.custom-file-label{
+    overflow: hidden;
+}
+
+.small{
+    font-size: small;
+}
