@@ -12,7 +12,6 @@ venv/
 *.log
 *.pot
 *.pyc
-media/
 staticfiles/
 
 # Environment / secrets
